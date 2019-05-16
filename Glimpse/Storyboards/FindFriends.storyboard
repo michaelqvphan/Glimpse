@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="63o-UT-bnC">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find Friends-->
+        <scene sceneID="VgJ-Vj-Pfb">
+            <objects>
+                <viewController id="BbF-Yc-24U" customClass="FindFriendsViewController" customModule="Glimpse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q81-PF-zzE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Kc-Qv-Kss">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FindFriendsCell" rowHeight="71" id="XcK-vB-OPl" customClass="FindFriendsCell" customModule="Glimpse" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XcK-vB-OPl" id="n2o-LM-Kjb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTa-HC-vAZ">
+                                                    <rect key="frame" x="15" y="0.0" width="262" height="70.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6da-9L-nUY">
+                                                    <rect key="frame" x="289" y="10" width="115" height="50.5"/>
+                                                    <color key="backgroundColor" red="0.1196244135" green="0.80059379340000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="115" id="5BY-q5-5Tt"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.1196244135" green="0.80059379340000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="followButtonTapped:" destination="XcK-vB-OPl" eventType="touchUpInside" id="hNb-KM-081"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6da-9L-nUY" firstAttribute="leading" secondItem="OTa-HC-vAZ" secondAttribute="trailing" constant="12" id="04F-y1-I1q"/>
+                                                <constraint firstItem="OTa-HC-vAZ" firstAttribute="top" secondItem="n2o-LM-Kjb" secondAttribute="top" id="0tK-sj-m34"/>
+                                                <constraint firstItem="OTa-HC-vAZ" firstAttribute="leading" secondItem="n2o-LM-Kjb" secondAttribute="leading" constant="15" id="7S7-an-crj"/>
+                                                <constraint firstAttribute="bottom" secondItem="OTa-HC-vAZ" secondAttribute="bottom" id="CJ6-5h-kF2"/>
+                                                <constraint firstAttribute="bottom" secondItem="6da-9L-nUY" secondAttribute="bottom" constant="10" id="IxN-55-G47"/>
+                                                <constraint firstAttribute="trailing" secondItem="6da-9L-nUY" secondAttribute="trailing" constant="10" id="SaZ-NB-Rs7"/>
+                                                <constraint firstItem="6da-9L-nUY" firstAttribute="top" secondItem="n2o-LM-Kjb" secondAttribute="top" constant="10" id="cnZ-xo-Ejc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="followButton" destination="6da-9L-nUY" id="qPk-jq-YcB"/>
+                                            <outlet property="usernameLabel" destination="OTa-HC-vAZ" id="z5L-CY-0wu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BbF-Yc-24U" id="AeQ-LR-JGr"/>
+                                    <outlet property="delegate" destination="BbF-Yc-24U" id="dXz-rS-EDT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yGb-qO-qot" firstAttribute="trailing" secondItem="1Kc-Qv-Kss" secondAttribute="trailing" id="3mc-C0-CMj"/>
+                            <constraint firstItem="1Kc-Qv-Kss" firstAttribute="leading" secondItem="yGb-qO-qot" secondAttribute="leading" id="5zw-Ce-y2o"/>
+                            <constraint firstItem="yGb-qO-qot" firstAttribute="bottom" secondItem="1Kc-Qv-Kss" secondAttribute="bottom" id="a83-wg-gYz"/>
+                            <constraint firstItem="1Kc-Qv-Kss" firstAttribute="top" secondItem="yGb-qO-qot" secondAttribute="top" id="aMt-v4-EKP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yGb-qO-qot"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find Friends" id="jQ8-ev-hEa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="9yj-Yf-FwS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mkJ-Ju-T8T">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutButtonTapped:" destination="BbF-Yc-24U" eventType="touchUpInside" id="45i-Vc-sb5"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="friendTableView" destination="1Kc-Qv-Kss" id="ZVh-y8-4F8"/>
+                        <outlet property="signOutButton" destination="9yj-Yf-FwS" id="29v-TM-IuT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAy-ib-FP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242.0289855072465" y="470.75892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xFn-l1-ifF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="63o-UT-bnC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_find_friends_black" selectedImage="tab_find_friends_black" springLoaded="YES" id="Glm-WO-owi">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VQw-RX-eQf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BbF-Yc-24U" kind="relationship" relationship="rootViewController" id="eaO-t1-oKr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsq-bv-O3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331.8840579710145" y="470.75892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_find_friends_black" width="25" height="25"/>
+    </resources>
+</document>
