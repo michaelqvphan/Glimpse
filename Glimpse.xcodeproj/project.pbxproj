@@ -163,10 +163,10 @@
 				07FC6EC2228C158000D9FF51 /* StorageReference.swift */,
 				07FC6EC0228C148A00D9FF51 /* PhotoSizer.swift */,
 				07FC6EAE228BEBE200D9FF51 /* Constants.swift */,
-				07198A77228AB6380082FA18 /* GoogleService-Info.plist */,
 				07FC6EB0228BECCA00D9FF51 /* StoryboardHelp.swift */,
 				07FC6EDC228E012000D9FF51 /* Services.swift */,
 				07198A71228AB4AA0082FA18 /* Info.plist */,
+				07198A77228AB6380082FA18 /* GoogleService-Info.plist */,
 			);
 			path = Misc;
 			sourceTree = "<group>";

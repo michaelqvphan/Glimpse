@@ -19,13 +19,11 @@ struct StorageService {
         
         reference.putData(imageData, metadata: nil, completion: { (metadata, error) in
             if let error = error {
-                assertionFailure(error.localizedDescription)
                 return completion(nil)
             }
             
             reference.downloadURL(completion: { (url, error) in
                 if let error = error {
-                    assertionFailure(error.localizedDescription)
                     return completion(nil)
                 }
                 completion(url)
@@ -102,7 +100,6 @@ struct UserService {
         let reference = Database.database().reference().child("users").child(firUser.uid)
         reference.setValue(userAttributes) { (error, reference) in
             if let error = error {
-                assertionFailure(error.localizedDescription)
                 return completeion(nil)
             }
             
@@ -244,7 +241,6 @@ struct FollowService {
         let reference = Database.database().reference()
         reference.updateChildValues(followData) { (error, _) in
             if let error = error {
-                assertionFailure(error.localizedDescription)
                 success(false)
             }
             
@@ -256,10 +252,6 @@ struct FollowService {
                 postKeys.forEach { followData["timeline/\(currentUID)/\($0)"] = timelinePostDict }
                 
                 reference.updateChildValues(followData, withCompletionBlock: { (error, ref) in
-                    if let error = error {
-                        assertionFailure(error.localizedDescription)
-                    }
-                    
                     success(error == nil)
                 })
             }
@@ -274,9 +266,6 @@ struct FollowService {
         
         let reference = Database.database().reference()
         reference.updateChildValues(followData) { (error, reference) in
-            if let error = error {
-                assertionFailure(error.localizedDescription)
-            }
             
             UserService.posts(for: user) { (posts) in
                 let postKeys = posts.compactMap { $0.key }
@@ -285,9 +274,6 @@ struct FollowService {
                 postKeys.forEach { unfollowData["timeline/\(currentUID)/\($0)"] = NSNull() }
                 
                 reference.updateChildValues(unfollowData, withCompletionBlock: { (error, ref) in
-                    if let error = error {
-                        assertionFailure(error.localizedDescription)
-                    }
                     
                     success(error == nil)
                 })
@@ -332,7 +318,6 @@ struct LikeService{
         let likesReference = Database.database().reference().child("postLikes").child(key).child(currentUID)
         likesReference.setValue(true) { (error, _) in
             if let error = error {
-                assertionFailure(error.localizedDescription)
                 return success(false)
             }
             
@@ -346,7 +331,6 @@ struct LikeService{
                 return TransactionResult.success(withValue: mutableData)
             }, andCompletionBlock: { (error, _, _) in
                 if let error = error {
-                    assertionFailure(error.localizedDescription)
                     success(false)
                 }
                 else {
@@ -369,7 +353,6 @@ struct LikeService{
         // Setting the like to nil will delete it off the database
         likesReference.setValue(nil) { (error, _) in
             if let error = error {
-                assertionFailure(error.localizedDescription)
                 return success(false)
             }
             
@@ -383,7 +366,6 @@ struct LikeService{
                 return TransactionResult.success(withValue: mutableData)
             }, andCompletionBlock: { (error, _, _) in
                 if let error = error {
-                    assertionFailure(error.localizedDescription)
                     success(false)
                 }
                 else {
@@ -396,7 +378,6 @@ struct LikeService{
     
     static func isPostLiked(_ post: Post, byCurrentUserWithCompletion completion: @escaping (Bool) -> Void) {
         guard let postKey = post.key else {
-            assertionFailure("Error")
             return completion(false)
         }
         

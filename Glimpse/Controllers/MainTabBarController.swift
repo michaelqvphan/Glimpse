@@ -23,7 +23,7 @@ class MainTabBarController: UITabBarController {
         delegate = self
         
         // Makes it so the tabs we aren't in are black
-        tabBar.unselectedItemTintColor = .black
+        tabBar.unselectedItemTintColor = .lightGray
     }
 
 }
