@@ -2,7 +2,7 @@
 //  Services.swift
 //  
 //
-//  Created by Michael Phan on 5/16/19.
+//  Created by Michael Phan on 5/3/19.
 //
 
 import Foundation
@@ -374,7 +374,7 @@ struct LikeService{
             }
             
             // Allows us to decrement the like count
-            let likeCountReference = Database.database().reference().child("posts").child(key).child("likeCount")
+            let likeCountReference = Database.database().reference().child("posts").child(post.poster.uid).child(key).child("like_count")
             likeCountReference.runTransactionBlock({ (mutableData) -> TransactionResult in
                 let currentCount = mutableData.value as? Int ?? 0
                 

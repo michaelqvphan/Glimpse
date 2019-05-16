@@ -8,20 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		07198A66228AB4A90082FA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07198A65228AB4A90082FA18 /* AppDelegate.swift */; };
-		07198A68228AB4A90082FA18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07198A67228AB4A90082FA18 /* ViewController.swift */; };
 		07198A6B228AB4A90082FA18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07198A69228AB4A90082FA18 /* Main.storyboard */; };
 		07198A6D228AB4AA0082FA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07198A6C228AB4AA0082FA18 /* Assets.xcassets */; };
 		07198A70228AB4AA0082FA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07198A6E228AB4AA0082FA18 /* LaunchScreen.storyboard */; };
+		07198A78228AB6380082FA18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07198A77228AB6380082FA18 /* GoogleService-Info.plist */; };
+		07FC6EA3228B5A7600D9FF51 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FC6EA2228B5A7600D9FF51 /* Login.storyboard */; };
+		07FC6EA7228B5B3900D9FF51 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EA6228B5B3900D9FF51 /* LoginViewController.swift */; };
+		07FC6EA9228BB46100D9FF51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EA8228BB46100D9FF51 /* User.swift */; };
+		07FC6EAB228BC01600D9FF51 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EAA228BC01600D9FF51 /* CreateUsernameViewController.swift */; };
+		07FC6EAF228BEBE200D9FF51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EAE228BEBE200D9FF51 /* Constants.swift */; };
+		07FC6EB1228BECCA00D9FF51 /* StoryboardHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EB0228BECCA00D9FF51 /* StoryboardHelp.swift */; };
+		07FC6EB3228BF32D00D9FF51 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EB2228BF32D00D9FF51 /* HomeViewController.swift */; };
+		07FC6EB5228BF33D00D9FF51 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EB4228BF33D00D9FF51 /* FindFriendsViewController.swift */; };
+		07FC6EB7228C016100D9FF51 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EB6228C016100D9FF51 /* MainTabBarController.swift */; };
+		07FC6EB9228C030700D9FF51 /* GlimpsePhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EB8228C030700D9FF51 /* GlimpsePhotoHelper.swift */; };
+		07FC6EBF228C114D00D9FF51 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EBE228C114D00D9FF51 /* Post.swift */; };
+		07FC6EC1228C148A00D9FF51 /* PhotoSizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EC0228C148A00D9FF51 /* PhotoSizer.swift */; };
+		07FC6EC3228C158000D9FF51 /* StorageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EC2228C158000D9FF51 /* StorageReference.swift */; };
+		07FC6EC8228C9B0300D9FF51 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FC6EC7228C9B0300D9FF51 /* Home.storyboard */; };
+		07FC6ECA228C9D7C00D9FF51 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EC9228C9D7C00D9FF51 /* PostImageCell.swift */; };
+		07FC6ECC228CAA6F00D9FF51 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6ECB228CAA6F00D9FF51 /* PostHeaderCell.swift */; };
+		07FC6ECE228CADDD00D9FF51 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6ECD228CADDD00D9FF51 /* PostActionCell.swift */; };
+		07FC6ED8228D18FB00D9FF51 /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FC6ED7228D18FB00D9FF51 /* FindFriends.storyboard */; };
+		07FC6EDA228D19AC00D9FF51 /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6ED9228D19AC00D9FF51 /* FindFriendsCell.swift */; };
+		07FC6EDD228E012000D9FF51 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC6EDC228E012000D9FF51 /* Services.swift */; };
+		974ED0F3C1EDB9A7DB1A61EC /* Pods_Glimpse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDE4C052AEF3549EDC270A0 /* Pods_Glimpse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07198A62228AB4A90082FA18 /* Glimpse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glimpse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07198A65228AB4A90082FA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07198A67228AB4A90082FA18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07198A6A228AB4A90082FA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07198A6C228AB4AA0082FA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07198A6F228AB4AA0082FA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07198A71228AB4AA0082FA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07198A77228AB6380082FA18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		07FC6EA2228B5A7600D9FF51 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		07FC6EA6228B5B3900D9FF51 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		07FC6EA8228BB46100D9FF51 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07FC6EAA228BC01600D9FF51 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		07FC6EAE228BEBE200D9FF51 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07FC6EB0228BECCA00D9FF51 /* StoryboardHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHelp.swift; sourceTree = "<group>"; };
+		07FC6EB2228BF32D00D9FF51 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07FC6EB4228BF33D00D9FF51 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		07FC6EB6228C016100D9FF51 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		07FC6EB8228C030700D9FF51 /* GlimpsePhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimpsePhotoHelper.swift; sourceTree = "<group>"; };
+		07FC6EBE228C114D00D9FF51 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		07FC6EC0228C148A00D9FF51 /* PhotoSizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSizer.swift; sourceTree = "<group>"; };
+		07FC6EC2228C158000D9FF51 /* StorageReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageReference.swift; sourceTree = "<group>"; };
+		07FC6EC7228C9B0300D9FF51 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		07FC6EC9228C9D7C00D9FF51 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		07FC6ECB228CAA6F00D9FF51 /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
+		07FC6ECD228CADDD00D9FF51 /* PostActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
+		07FC6ED7228D18FB00D9FF51 /* FindFriends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindFriends.storyboard; sourceTree = "<group>"; };
+		07FC6ED9228D19AC00D9FF51 /* FindFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
+		07FC6EDC228E012000D9FF51 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		4FDE4C052AEF3549EDC270A0 /* Pods_Glimpse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glimpse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1F751948D203705F1F03D4 /* Pods-Glimpse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glimpse.debug.xcconfig"; path = "Target Support Files/Pods-Glimpse/Pods-Glimpse.debug.xcconfig"; sourceTree = "<group>"; };
+		FEDE1E2E21BF8036B0651712 /* Pods-Glimpse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glimpse.release.xcconfig"; path = "Target Support Files/Pods-Glimpse/Pods-Glimpse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974ED0F3C1EDB9A7DB1A61EC /* Pods_Glimpse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +85,8 @@
 			children = (
 				07198A64228AB4A90082FA18 /* Glimpse */,
 				07198A63228AB4A90082FA18 /* Products */,
+				931D457C6C33342709FFB7F5 /* Pods */,
+				C5D23419FA6F6E9C2215AFF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +102,90 @@
 			isa = PBXGroup;
 			children = (
 				07198A65228AB4A90082FA18 /* AppDelegate.swift */,
-				07198A67228AB4A90082FA18 /* ViewController.swift */,
-				07198A69228AB4A90082FA18 /* Main.storyboard */,
 				07198A6C228AB4AA0082FA18 /* Assets.xcassets */,
-				07198A6E228AB4AA0082FA18 /* LaunchScreen.storyboard */,
-				07198A71228AB4AA0082FA18 /* Info.plist */,
+				07198A7B228AB7A60082FA18 /* Models */,
+				07198A7C228AB7AF0082FA18 /* Views */,
+				07198A7A228AB79E0082FA18 /* Controllers */,
+				07198A7F228AB7CE0082FA18 /* Storyboards */,
+				07FC6EDE228E021200D9FF51 /* Misc */,
 			);
 			path = Glimpse;
+			sourceTree = "<group>";
+		};
+		07198A7A228AB79E0082FA18 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07FC6EAA228BC01600D9FF51 /* CreateUsernameViewController.swift */,
+				07FC6EB4228BF33D00D9FF51 /* FindFriendsViewController.swift */,
+				07FC6EB2228BF32D00D9FF51 /* HomeViewController.swift */,
+				07FC6EA6228B5B3900D9FF51 /* LoginViewController.swift */,
+				07FC6EB6228C016100D9FF51 /* MainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07198A7B228AB7A60082FA18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07FC6EBE228C114D00D9FF51 /* Post.swift */,
+				07FC6EA8228BB46100D9FF51 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07198A7C228AB7AF0082FA18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07FC6ED9228D19AC00D9FF51 /* FindFriendsCell.swift */,
+				07FC6ECD228CADDD00D9FF51 /* PostActionCell.swift */,
+				07FC6ECB228CAA6F00D9FF51 /* PostHeaderCell.swift */,
+				07FC6EC9228C9D7C00D9FF51 /* PostImageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07198A7F228AB7CE0082FA18 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				07FC6ED7228D18FB00D9FF51 /* FindFriends.storyboard */,
+				07FC6EC7228C9B0300D9FF51 /* Home.storyboard */,
+				07198A6E228AB4AA0082FA18 /* LaunchScreen.storyboard */,
+				07FC6EA2228B5A7600D9FF51 /* Login.storyboard */,
+				07198A69228AB4A90082FA18 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		07FC6EDE228E021200D9FF51 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				07FC6EB8228C030700D9FF51 /* GlimpsePhotoHelper.swift */,
+				07FC6EC2228C158000D9FF51 /* StorageReference.swift */,
+				07FC6EC0228C148A00D9FF51 /* PhotoSizer.swift */,
+				07FC6EAE228BEBE200D9FF51 /* Constants.swift */,
+				07198A77228AB6380082FA18 /* GoogleService-Info.plist */,
+				07FC6EB0228BECCA00D9FF51 /* StoryboardHelp.swift */,
+				07FC6EDC228E012000D9FF51 /* Services.swift */,
+				07198A71228AB4AA0082FA18 /* Info.plist */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		931D457C6C33342709FFB7F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B1F751948D203705F1F03D4 /* Pods-Glimpse.debug.xcconfig */,
+				FEDE1E2E21BF8036B0651712 /* Pods-Glimpse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5D23419FA6F6E9C2215AFF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FDE4C052AEF3549EDC270A0 /* Pods_Glimpse.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07198A74228AB4AA0082FA18 /* Build configuration list for PBXNativeTarget "Glimpse" */;
 			buildPhases = (
+				052BCF738E863DE70061F919 /* [CP] Check Pods Manifest.lock */,
 				07198A5E228AB4A90082FA18 /* Sources */,
 				07198A5F228AB4A90082FA18 /* Frameworks */,
 				07198A60228AB4A90082FA18 /* Resources */,
+				0235F1A61A9E8F649BCB8D34 /* [CP] Embed Pods Frameworks */,
+				6A2A8A7F43F57429FB266D81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,19 +250,118 @@
 			buildActionMask = 2147483647;
 			files = (
 				07198A70228AB4AA0082FA18 /* LaunchScreen.storyboard in Resources */,
+				07198A78228AB6380082FA18 /* GoogleService-Info.plist in Resources */,
 				07198A6D228AB4AA0082FA18 /* Assets.xcassets in Resources */,
+				07FC6ED8228D18FB00D9FF51 /* FindFriends.storyboard in Resources */,
+				07FC6EC8228C9B0300D9FF51 /* Home.storyboard in Resources */,
+				07FC6EA3228B5A7600D9FF51 /* Login.storyboard in Resources */,
 				07198A6B228AB4A90082FA18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0235F1A61A9E8F649BCB8D34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Glimpse/Pods-Glimpse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Glimpse/Pods-Glimpse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		052BCF738E863DE70061F919 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Glimpse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A2A8A7F43F57429FB266D81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Glimpse/Pods-Glimpse-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Glimpse/Pods-Glimpse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07198A5E228AB4A90082FA18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07198A68228AB4A90082FA18 /* ViewController.swift in Sources */,
+				07FC6EA9228BB46100D9FF51 /* User.swift in Sources */,
+				07FC6EA7228B5B3900D9FF51 /* LoginViewController.swift in Sources */,
+				07FC6EB7228C016100D9FF51 /* MainTabBarController.swift in Sources */,
+				07FC6ECE228CADDD00D9FF51 /* PostActionCell.swift in Sources */,
+				07FC6EBF228C114D00D9FF51 /* Post.swift in Sources */,
+				07FC6ECA228C9D7C00D9FF51 /* PostImageCell.swift in Sources */,
+				07FC6EDA228D19AC00D9FF51 /* FindFriendsCell.swift in Sources */,
+				07FC6EC1228C148A00D9FF51 /* PhotoSizer.swift in Sources */,
+				07FC6EB3228BF32D00D9FF51 /* HomeViewController.swift in Sources */,
+				07FC6EB1228BECCA00D9FF51 /* StoryboardHelp.swift in Sources */,
+				07FC6EB9228C030700D9FF51 /* GlimpsePhotoHelper.swift in Sources */,
+				07FC6EB5228BF33D00D9FF51 /* FindFriendsViewController.swift in Sources */,
+				07FC6EC3228C158000D9FF51 /* StorageReference.swift in Sources */,
+				07FC6EAF228BEBE200D9FF51 /* Constants.swift in Sources */,
+				07FC6EAB228BC01600D9FF51 /* CreateUsernameViewController.swift in Sources */,
+				07FC6ECC228CAA6F00D9FF51 /* PostHeaderCell.swift in Sources */,
+				07FC6EDD228E012000D9FF51 /* Services.swift in Sources */,
 				07198A66228AB4A90082FA18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,10 +506,11 @@
 		};
 		07198A75228AB4AA0082FA18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1F751948D203705F1F03D4 /* Pods-Glimpse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Glimpse/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Glimpse/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +524,11 @@
 		};
 		07198A76228AB4AA0082FA18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEDE1E2E21BF8036B0651712 /* Pods-Glimpse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Glimpse/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Glimpse/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

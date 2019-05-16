@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        configureIntialRootViewController(for: window)
+        
         return true
     }
 
@@ -42,5 +47,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+// Checking if a singleton user has already been created. If so, keep that user login. If no, go to login screen
+extension AppDelegate {
+    func configureIntialRootViewController(for window: UIWindow?) {
+        let defaults = UserDefaults.standard
+        let initialViewCOntroller: UIViewController
+        
+        if let _ = Auth.auth().currentUser,
+            let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
+            let user = try? JSONDecoder().decode(User.self, from: userData) {
+                User.setCurrent(user)
+                initialViewCOntroller = UIStoryboard.initialViewController(for: .main)
+        }
+        else {
+            initialViewCOntroller = UIStoryboard.initialViewController(for: .login)
+        }
+        
+        window?.rootViewController = initialViewCOntroller
+        window?.makeKeyAndVisible()
+    }
 }
 

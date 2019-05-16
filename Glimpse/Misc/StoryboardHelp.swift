@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+// Used to help switching to the login and main storyboard
 extension UIStoryboard {
     enum GlimpseType: String {
         case main

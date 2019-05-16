@@ -2,7 +2,7 @@
 //  FindFriendsCell.swift
 //  Glimpse
 //
-//  Created by Michael Phan on 5/15/19.
+//  Created by Michael Phan on 5/9/19.
 //  Copyright © 2019 Michael Phan. All rights reserved.
 //
 
@@ -21,7 +21,6 @@ class FindFriendsCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         // Adding some styling for the Friend Cells
         followButton.layer.borderColor = UIColor.lightGray.cgColor
@@ -29,6 +28,7 @@ class FindFriendsCell: UITableViewCell {
         followButton.layer.cornerRadius = 8
         followButton.clipsToBounds = true
         
+        // Allowing toggle for if the follow button is clicked
         followButton.setTitle("Follow", for: .normal)
         followButton.setTitle("Following", for: .selected)
     }
@@ -36,8 +36,8 @@ class FindFriendsCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
     @IBAction func followButtonTapped(_ sender: UIButton) {
         delegate?.tappedFollowButton(sender, on: self)
     }
-    
 }
