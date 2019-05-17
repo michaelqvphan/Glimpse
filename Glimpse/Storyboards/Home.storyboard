@@ -35,27 +35,11 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWF-UX-J8F">
-                                                    <rect key="frame" x="370" y="5" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="jL6-ZD-Vry"/>
-                                                        <constraint firstAttribute="width" constant="44" id="o84-f7-n9l"/>
-                                                    </constraints>
-                                                    <state key="normal" image="btn_options_black">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="optionsButtonTapped:" destination="PHz-lq-EbV" eventType="touchUpInside" id="DwZ-RO-dDC"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.1196244135" green="0.80059379340000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="GMh-uL-P2S" firstAttribute="top" secondItem="fDO-WR-VG9" secondAttribute="top" id="6hU-tk-uVH"/>
-                                                <constraint firstItem="sWF-UX-J8F" firstAttribute="centerY" secondItem="fDO-WR-VG9" secondAttribute="centerY" id="729-Ab-R4Q"/>
-                                                <constraint firstAttribute="trailing" secondItem="sWF-UX-J8F" secondAttribute="trailing" id="TVs-Zv-jE0"/>
                                                 <constraint firstAttribute="bottom" secondItem="GMh-uL-P2S" secondAttribute="bottom" id="WwH-n1-ble"/>
-                                                <constraint firstItem="sWF-UX-J8F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GMh-uL-P2S" secondAttribute="trailing" constant="15" id="fyy-QC-B9g"/>
                                                 <constraint firstItem="GMh-uL-P2S" firstAttribute="leading" secondItem="fDO-WR-VG9" secondAttribute="leading" constant="10" id="uvj-VQ-CAm"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -195,7 +179,6 @@
     <resources>
         <image name="btn_heart_black_outline" width="24" height="24"/>
         <image name="btn_heart_red_solid" width="24" height="24"/>
-        <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>
 </document>
